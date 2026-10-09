@@ -1,0 +1,17 @@
+{
+  "name": "ai-tryon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Drop-in AI virtual try-on widget (webcam + drag & drop outfit) with a tiny proxy server",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/server.js",
+    "dev": "node --watch --env-file-if-exists=.env server/server.js",
+    "test": "node test/e2e.mjs"
+  },
+  "engines": { "node": ">=20.6" },
+  "dependencies": {
+    "express": "^4.21.0",
+    "sharp": "^0.33.5"
+  }
+}
